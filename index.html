@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios de Estrategia Digital</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ffffff;
+      color: #000;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 24px;
+    }
+
+    .hero {
+      padding: 80px 8%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      max-width: 900px;
+      margin: 0 auto 20px;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #cfcfcf;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .vsl-box {
+      margin: 50px auto 20px;
+      max-width: 850px;
+      aspect-ratio: 16 / 9;
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 22px;
+    }
+
+    section {
+      padding: 70px 8%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #181818;
+      padding: 28px;
+      border-radius: 14px;
+      border: 1px solid #2b2b2b;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: #cfcfcf;
+    }
+
+    .cta {
+      text-align: center;
+      background: #161616;
+      border-radius: 24px;
+      padding: 60px 30px;
+      margin-top: 40px;
+    }
+
+    footer {
+      padding: 30px 8%;
+      text-align: center;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Francisco Urrets</div>
+    <a href="#contacto" class="btn">Agendar llamada</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Convertí tu presencia digital en un sistema real para atraer clientes</h1>
+      <p>
+        Estrategia digital, comunicación y Meta Ads para emprendedores y profesionales que quieren vender mejor sin depender solo de recomendaciones.
+      </p>
+
+      <div class="vsl-box">
+        Video de presentación / VSL
+      </div>
+
+      <a href="#contacto" class="btn">Quiero una consulta</a>
+    </section>
+
+    <section>
+      <h2>Qué trabajamos</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Estrategia digital</h3>
+          <p>Analizamos tu negocio, tu oferta, tu cliente ideal y armamos una estrategia clara para vender mejor.</p>
+        </div>
+
+        <div class="card">
+          <h3>Comunicación</h3>
+          <p>Ordenamos tu mensaje para que tu público entienda qué hacés, por qué importa y por qué debería elegirte.</p>
+        </div>
+
+        <div class="card">
+          <h3>Meta Ads</h3>
+          <p>Diseñamos campañas en Instagram y Facebook para generar conversaciones, visibilidad y oportunidades comerciales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Para quién es</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Emprendedores</h3>
+          <p>Personas que ya venden algo, pero necesitan más estructura para crecer.</p>
+        </div>
+
+        <div class="card">
+          <h3>Prestadores de servicios</h3>
+          <p>Profesionales que quieren atraer mejores clientes y comunicar mejor su valor.</p>
+        </div>
+
+        <div class="card">
+          <h3>Negocios digitales</h3>
+          <p>Marcas que quieren validar, ordenar o escalar su sistema comercial online.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="cta">
+        <h2>Agendá una llamada</h2>
+        <p>
+          Revisamos tu situación actual, detectamos oportunidades y vemos si tiene sentido trabajar juntos.
+        </p>
+        <a href="https://calendly.com/stratosioinnovate/consulta-gratuita" class="btn" target="_blank">
+          Agendar ahora
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Francisco Urrets. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
