@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Predictable Client Acquisition Systems | Francisco Urrets Zavalia</title>
-
+  <title>Systèmes d'acquisition client | Francisco Urrets Zavalia</title>
   <style>
     :root {
       --navy: #0b1f33;
@@ -16,15 +15,8 @@
       --line: rgba(184, 155, 94, 0.35);
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: Georgia, "Times New Roman", serif;
@@ -33,9 +25,7 @@
       line-height: 1.6;
     }
 
-    p, a, li, span {
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    p, a, li, span { font-family: Arial, Helvetica, sans-serif; }
 
     header {
       position: sticky;
@@ -52,7 +42,6 @@
     .logo {
       font-size: 18px;
       font-weight: bold;
-      letter-spacing: 0.5px;
       color: var(--navy);
     }
 
@@ -74,7 +63,6 @@
       background: var(--navy);
       color: var(--white);
       padding: 14px 24px;
-      border-radius: 2px;
       text-decoration: none;
       font-weight: bold;
       border: 1px solid var(--navy);
@@ -85,12 +73,6 @@
       background: var(--gold);
       border-color: var(--gold);
       color: var(--deep);
-    }
-
-    .btn.secondary {
-      background: transparent;
-      color: var(--navy);
-      border: 1px solid var(--gold);
     }
 
     .hero {
@@ -113,25 +95,24 @@
     }
 
     h1 {
-      font-size: clamp(46px, 6vw, 82px);
+      font-size: clamp(44px, 6vw, 78px);
       line-height: 1;
       color: var(--navy);
       margin-bottom: 24px;
-      max-width: 760px;
+      max-width: 780px;
     }
 
     .hero p {
       font-size: 20px;
       color: var(--muted);
-      max-width: 650px;
+      max-width: 670px;
       margin-bottom: 34px;
     }
 
     .hero-img {
       min-height: 520px;
-      border-radius: 2px;
       background:
-        linear-gradient(rgba(7, 21, 34, 0.15), rgba(7, 21, 34, 0.15)),
+        linear-gradient(rgba(7, 21, 34, 0.18), rgba(7, 21, 34, 0.18)),
         url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80");
       background-size: cover;
       background-position: center;
@@ -145,7 +126,7 @@
     }
 
     .section-title {
-      max-width: 850px;
+      max-width: 870px;
       margin-bottom: 44px;
     }
 
@@ -197,13 +178,8 @@
       margin: auto;
     }
 
-    .dark h2 {
-      color: var(--cream);
-    }
-
-    .dark p {
-      color: #cfc8b8;
-    }
+    .dark h2 { color: var(--cream); }
+    .dark p { color: #cfc8b8; }
 
     .comparison {
       display: grid;
@@ -220,32 +196,6 @@
     .comparison-box.gold {
       border-color: var(--gold);
       background: rgba(184, 155, 94, 0.12);
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      margin-top: 35px;
-    }
-
-    .stat {
-      background: var(--white);
-      border: 1px solid var(--line);
-      padding: 28px;
-      text-align: center;
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 38px;
-      color: var(--navy);
-      margin-bottom: 6px;
-    }
-
-    .stat span {
-      color: var(--muted);
-      font-size: 14px;
     }
 
     .case {
@@ -266,8 +216,33 @@
       margin-bottom: 12px;
     }
 
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 35px;
+    }
+
+    .stat {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      padding: 28px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 38px;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
     .process {
-      counter-reset: step;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 28px;
@@ -320,32 +295,11 @@
     }
 
     @media (max-width: 900px) {
-      header {
-        flex-direction: column;
-        gap: 18px;
-      }
-
-      nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-      }
-
-      .hero {
-        grid-template-columns: 1fr;
-        padding-top: 70px;
-      }
-
-      .hero-img {
-        min-height: 360px;
-      }
-
-      .grid,
-      .stats,
-      .process,
-      .comparison {
-        grid-template-columns: 1fr;
-      }
+      header { flex-direction: column; gap: 18px; }
+      nav { flex-wrap: wrap; justify-content: center; gap: 16px; }
+      .hero { grid-template-columns: 1fr; padding-top: 70px; }
+      .hero-img { min-height: 360px; }
+      .grid, .stats, .process, .comparison { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -355,11 +309,11 @@
   <header>
     <div class="logo">Francisco Urrets Zavalia</div>
     <nav>
-      <a href="#problem">Problem</a>
-      <a href="#system">System</a>
-      <a href="#cases">Case Studies</a>
-      <a href="#process">Process</a>
-      <a href="#contact">Book a Call</a>
+      <a href="#probleme">Problème</a>
+      <a href="#systeme">Système</a>
+      <a href="#cas">Résultats</a>
+      <a href="#processus">Méthode</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -367,61 +321,61 @@
 
     <section class="hero">
       <div>
-        <div class="eyebrow">Client Acquisition Systems</div>
-        <h1>Predictable Client Acquisition Systems</h1>
+        <div class="eyebrow">Consultant en acquisition digitale</div>
+        <h1>Des systèmes d'acquisition prévisibles pour cabinets d'architecture et entreprises de services premium.</h1>
         <p>
-          Helping service businesses generate consistent, high-quality leads through structured systems.
+          J'aide les entreprises de services à générer des demandes qualifiées de manière plus régulière grâce à une stratégie digitale structurée, des campagnes Meta Ads et un système pensé pour transformer l'attention en opportunités commerciales.
         </p>
-        <a href="https://calendly.com/stratosioinnovate/consulta-gratuita" class="btn" target="_blank">Book a Call</a>
+        <a href="https://wa.link/z0ut1i" class="btn" target="_blank">Discutons de votre acquisition</a>
       </div>
 
       <div class="hero-img"></div>
     </section>
 
-    <section id="problem">
+    <section id="probleme">
       <div class="section-title">
-        <h2>Most service businesses don't struggle to get clients. They struggle to get them consistently.</h2>
+        <h2>La plupart des entreprises de services ne manquent pas de clients. Elles manquent de régularité.</h2>
         <p>
-          Referrals are valuable, but they are rarely predictable. Without a structured acquisition system, growth depends too much on timing, reputation and chance.
+          Les recommandations sont précieuses. Mais lorsqu'elles deviennent la seule source d'opportunités, la croissance reste difficile à prévoir, à mesurer et à développer.
         </p>
       </div>
 
       <div class="grid">
         <div class="card">
-          <h3>Unpredictable lead flow</h3>
-          <p>Some months bring opportunities. Others are silent. That makes planning and scaling difficult.</p>
+          <h3>Flux de demandes irrégulier</h3>
+          <p>Certains mois génèrent de belles opportunités. D'autres sont beaucoup plus calmes. Cela rend la croissance difficile à piloter.</p>
         </div>
 
         <div class="card">
-          <h3>Dependence on referrals</h3>
-          <p>Word of mouth works, but it should not be the only source of qualified opportunities.</p>
+          <h3>Dépendance aux recommandations</h3>
+          <p>Le bouche-à-oreille fonctionne, mais il ne devrait pas être votre seul levier d'acquisition.</p>
         </div>
 
         <div class="card">
-          <h3>No structured acquisition system</h3>
-          <p>Without strategy, messaging, traffic and optimization working together, growth becomes inconsistent.</p>
+          <h3>Absence de système structuré</h3>
+          <p>Sans stratégie, message, trafic et optimisation, l'acquisition reste dispersée et peu prévisible.</p>
         </div>
       </div>
     </section>
 
-    <section class="dark" id="system">
+    <section class="dark" id="systeme">
       <div class="dark-inner">
         <div class="section-title">
-          <h2>Without a system, growth is unpredictable. With a system, client acquisition becomes consistent.</h2>
+          <h2>Ce n'est pas simplement de la publicité. C'est la construction d'un système d'acquisition.</h2>
           <p>
-            This is not about running ads. It's about building a system that consistently brings qualified clients into your business.
+            L'objectif n'est pas d'obtenir plus de visibilité pour la visibilité. L'objectif est de créer un système capable de générer des demandes qualifiées, de renforcer votre positionnement et de réduire progressivement l'improvisation commerciale.
           </p>
         </div>
 
         <div class="comparison">
           <div class="comparison-box">
-            <h3>Without a system</h3>
-            <p>Growth is unpredictable.</p>
+            <h3>Sans système</h3>
+            <p>La croissance dépend du hasard, du réseau et du moment.</p>
           </div>
 
           <div class="comparison-box gold">
-            <h3>With a system</h3>
-            <p>Client acquisition becomes consistent.</p>
+            <h3>Avec un système</h3>
+            <p>L'acquisition devient plus claire, mesurable et régulière.</p>
           </div>
         </div>
       </div>
@@ -429,147 +383,147 @@
 
     <section>
       <div class="section-title">
-        <h2>I design and implement simple acquisition systems using:</h2>
+        <h2>Je conçois et mets en place des systèmes d'acquisition simples, élégants et mesurables.</h2>
       </div>
 
       <div class="grid">
         <div class="card">
-          <h3>Paid traffic</h3>
-          <p>Strategic campaigns designed to create qualified conversations, not vanity metrics.</p>
+          <h3>Stratégie d'acquisition</h3>
+          <p>Analyse de votre offre, de votre marché, de vos clients idéaux et de vos leviers de croissance.</p>
         </div>
 
         <div class="card">
-          <h3>Conversion-focused funnels</h3>
-          <p>A clear structure that turns attention into business opportunities.</p>
+          <h3>Campagnes Meta Ads</h3>
+          <p>Des campagnes pensées pour générer des conversations qualifiées, pas seulement des clics ou de l'activité.</p>
         </div>
 
         <div class="card">
-          <h3>Structured messaging</h3>
-          <p>Positioning and communication that help the right prospects understand your value.</p>
+          <h3>Message et tunnel</h3>
+          <p>Une structure claire pour transformer l'attention en demandes, puis les demandes en opportunités commerciales.</p>
         </div>
       </div>
     </section>
 
-    <section id="cases">
+    <section id="cas">
       <div class="section-title">
-        <h2>Selected Case Studies</h2>
+        <h2>Résultats sélectionnés</h2>
         <p>
-          Practical examples of structured acquisition systems producing measurable results.
+          Quelques exemples de systèmes d'acquisition structurés ayant produit des résultats mesurables.
         </p>
       </div>
 
       <div class="case">
-        <span class="case-label">Case Study</span>
-        <h2>ARP — Architecture Studio / High Ticket Services</h2>
+        <span class="case-label">Étude de cas</span>
+        <h2>ARP — Architecture & services à forte valeur</h2>
 
         <div class="stats">
           <div class="stat">
             <strong>7,498</strong>
-            <span>Profile visits</span>
+            <span>Visites de profil</span>
           </div>
 
           <div class="stat">
             <strong>105</strong>
-            <span>Conversations generated</span>
+            <span>Conversations générées</span>
           </div>
 
           <div class="stat">
             <strong>60</strong>
-            <span>Qualified leads</span>
+            <span>Demandes qualifiées</span>
           </div>
 
           <div class="stat">
             <strong>$5.47</strong>
-            <span>Cost per qualified lead</span>
+            <span>Coût par demande qualifiée</span>
           </div>
         </div>
       </div>
 
       <div class="case">
-        <span class="case-label">Case Study</span>
+        <span class="case-label">Étude de cas</span>
         <h2>Bahia Brands</h2>
 
         <div class="stats">
           <div class="stat">
             <strong>$600</strong>
-            <span>Ad spend</span>
+            <span>Budget publicitaire</span>
           </div>
 
           <div class="stat">
             <strong>$6,400</strong>
-            <span>Revenue generated</span>
+            <span>Chiffre d'affaires généré</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="process">
+    <section id="processus">
       <div class="section-title">
-        <h2>How It Works</h2>
+        <h2>Ma méthode</h2>
       </div>
 
       <div class="process">
         <div class="step">
           <span>01</span>
-          <h3>Diagnose</h3>
-          <p>Identify gaps and inefficiencies in your current system.</p>
+          <h3>Diagnostiquer</h3>
+          <p>Identifier les points de friction, les opportunités et les faiblesses de votre système actuel.</p>
         </div>
 
         <div class="step">
           <span>02</span>
-          <h3>Build</h3>
-          <p>Create a structured acquisition system.</p>
+          <h3>Construire</h3>
+          <p>Créer une stratégie claire, un message structuré et un système d'acquisition cohérent.</p>
         </div>
 
         <div class="step">
           <span>03</span>
-          <h3>Optimize</h3>
-          <p>Refine and improve performance over time.</p>
+          <h3>Optimiser</h3>
+          <p>Analyser, améliorer et ajuster les campagnes pour renforcer la performance dans le temps.</p>
         </div>
       </div>
     </section>
 
     <section>
       <div class="section-title">
-        <h2>Client Acquisition System Management</h2>
-        <p>Includes:</p>
+        <h2>Gestion de système d'acquisition client</h2>
+        <p>Ce que cela inclut :</p>
       </div>
 
       <div class="grid">
         <div class="card">
-          <h3>Strategy</h3>
-          <p>Business, offer, audience and acquisition strategy.</p>
+          <h3>Audit et stratégie</h3>
+          <p>Analyse de l'offre, du marché, du positionnement et des opportunités d'acquisition.</p>
         </div>
 
         <div class="card">
-          <h3>Paid traffic management</h3>
-          <p>Campaign planning, launch, testing and management.</p>
+          <h3>Set-up et mise en place</h3>
+          <p>Structure des campagnes, audiences, messages, tracking et architecture du système.</p>
         </div>
 
         <div class="card">
-          <h3>Funnel structure</h3>
-          <p>A clear path from attention to qualified conversation.</p>
+          <h3>Gestion du trafic payant</h3>
+          <p>Création, lancement, suivi et optimisation des campagnes Meta Ads.</p>
         </div>
 
         <div class="card">
-          <h3>Continuous optimization</h3>
-          <p>Analysis, reporting and performance improvement over time.</p>
+          <h3>Analyse et reporting</h3>
+          <p>Lecture des données, amélioration continue et décisions basées sur la performance réelle.</p>
         </div>
       </div>
     </section>
 
     <section class="cta" id="contact">
-      <h2>If this is something you're currently exploring, feel free to book a call.</h2>
+      <h2>Si vous souhaitez structurer votre acquisition digitale, discutons-en.</h2>
       <p>
-        We can review your current acquisition system, identify opportunities and see whether it makes sense to work together.
+        Je peux regarder votre situation actuelle, identifier quelques opportunités et voir si mon approche peut avoir du sens pour votre entreprise.
       </p>
-      <a href="https://calendly.com/stratosioinnovate/consulta-gratuita" class="btn" target="_blank">Book a Call</a>
+      <a href="https://wa.link/z0ut1i" class="btn" target="_blank">Discutons de votre acquisition</a>
     </section>
 
   </main>
 
   <footer>
-    © 2026 Francisco Urrets Zavalia. All rights reserved.
+    © 2026 Francisco Urrets Zavalia. Tous droits réservés.
   </footer>
 
 </body>
